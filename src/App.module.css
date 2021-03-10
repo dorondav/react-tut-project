@@ -1,0 +1,19 @@
+.App {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: #232323;
+}
+
+html,
+body,
+#app,
+#app>div {
+    height: 100%
+}
+
+@media (min-width: 500px) {
+    .App {
+        flex-flow: row;
+    }
+}

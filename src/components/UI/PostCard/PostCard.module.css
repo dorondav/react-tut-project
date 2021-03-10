@@ -1,0 +1,56 @@
+.PostCard {
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    height: 350px;
+    padding: 0.625rem;
+    margin: 0.5rem;
+    box-shadow: -3rem 0 3rem -2rem #000;
+    transition: transform 0.3s ease-out;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: linear-gradient(85deg, #434343, #262626);
+    color: var(--back-tc);
+    border-radius: 15px;
+}
+
+.PostCard:hover {
+    transform: translateY(-1rem) rotate(3deg);
+}
+
+.PostCard a {
+    text-decoration: none;
+}
+
+.PostCard h4 {
+    font-size: 1.25rem;
+    color: var(--main-tc);
+    margin: 0.5rem 0;
+}
+
+.PostCard small {
+    font-size: 0.7rem;
+}
+
+.PostCard p {
+    font-size: 0.8rem;
+}
+
+.PostCard .author {
+    margin-top: auto;
+    color: var(--sec-cl);
+}
+
+.PostDate {
+    margin: 0.5rem 0;
+}
+
+.Icons {
+    cursor: pointer;
+    margin-right: 0.2rem;
+    color: var(--back-tc);
+}
+
+.Icons:nth-of-type(1) {
+    margin-left: auto;
+}

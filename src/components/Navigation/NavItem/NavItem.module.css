@@ -1,0 +1,27 @@
+.NavItem {
+    margin: 0.3rem;
+}
+
+.NavItem a {
+    color: var(--back-tc);
+    text-decoration: 0;
+    font-size: 1rem;
+
+}
+
+.NavItem a.active {
+    color: var(--sec-tc);
+    text-decoration: 0;
+}
+
+.Success {
+    color: #5C9210;
+}
+
+.Danger {
+    color: #944317;
+}
+
+.Button:disabled {
+    color: #ccc;
+}
