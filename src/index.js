@@ -12,7 +12,7 @@ import postReducers from './store/reducers/posts';
 const composeEnhancers = process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null || compose;
 
 const rootReducer = combineReducers({
-  post: postReducers
+  posts: postReducers
 
 })
 const store = createStore(rootReducer, composeEnhancers(
