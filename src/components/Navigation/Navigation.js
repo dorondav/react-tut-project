@@ -9,7 +9,7 @@ function Navigation() {
 
                 <div className={classes.Navigation}>
                     <span className={classes.AddTask}>
-                        <NavItem exact link="/new-posts" textColor="#000" >ADD NEW POST</NavItem>
+                        {/* <NavItem exact link="/new-posts" textColor="#000" >ADD NEW POST</NavItem> */}
                     </span>
                     <NavItem exact link="/" >Home</NavItem>
                     <NavItem link="/posts" >Posts</NavItem>

@@ -7,3 +7,4 @@ export const Button = (props) => (
         disabled={props.disabled}
     >{props.children}</button>
 );
+export default React.memo(Button)

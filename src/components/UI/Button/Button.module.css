@@ -26,3 +26,11 @@
 .Button:disabled {
     color: #ccc;
 }
+
+.AddTask {
+    margin-top: 3rem;
+    background: var(--sec-cl);
+    width: 12rem;
+    border-radius: 25px;
+    text-align: center;
+}

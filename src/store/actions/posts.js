@@ -1,13 +1,31 @@
 import * as actionsTypes from './actionsType';
 import axios from '../../axios';
 
-export const removePost = (id) => {
+export const saveNewPost = post => {
+    return dispatch => {
+        axios.post('/posts.json', post)
+            .then(res => {
+                dispatch(fetchPosts())
+            })
+            .catch(err => console.error(err));
+    }
+}
+
+// Deleting Posts
+export const removePost = (postId) => {
     return {
         type: actionsTypes.REMOVE_POST,
-        postId: id
+        postId
     };
 };
 
+export const deletePost = postId => {
+    return dispatch => {
+        axios.delete(`/posts/${postId}.json`)
+            .then(res => dispatch(removePost(postId)))
+            .catch(err => console.error(err));
+    }
+}
 
 // Get all posts from firebase Dispatch cell
 export const fetchPostsSuccess = posts => {
@@ -41,7 +59,10 @@ export const fetchPosts = () => {
                         id: key
                     });
                 }
+
                 dispatch(fetchPostsSuccess(fetchedPosts));
+                console.log('fetchPostsSuccess', fetchedPosts);
+
             }).catch(err => console.error(err));
     }
 }

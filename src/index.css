@@ -7,6 +7,7 @@
   --main-tc: #fff;
   --sec-tc: #a5a1a1;
   --back-tc: #737373;
+  --error-tc: rgb(226, 93, 93);
   --sec-cl: #00a82d;
 
 }
@@ -122,4 +123,10 @@ select {
   .container {
     width: 1200px;
   }
+}
+
+.errorMsg {
+  margin: 0;
+  color: var(--error-tc);
+  font-size: 1.1rem;
 }

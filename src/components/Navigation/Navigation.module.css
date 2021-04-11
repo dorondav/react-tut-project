@@ -13,12 +13,12 @@
     background: black;
 }
 
-.AddTask {
+/* .AddTask {
     background: var(--sec-cl);
     width: 12rem;
     border-radius: 25px;
     text-align: center;
-}
+} */
 
 /* .AddTask li a {
     color: red

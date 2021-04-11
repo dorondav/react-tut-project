@@ -9,7 +9,7 @@ const PostCard = ({ post, onDelete }) => {
     return (
         <div className={classes.PostCard}>
             <div className="flex">
-                <small className={classes.PostDate}>On {post.created} </small>
+                <small className={classes.PostDate}>On {post.creationDate} </small>
                 {/* Will show only is Authenticated */}
                 <AiFillEdit className={classes.Icons} />
                 <AiFillDelete className={classes.Icons} onClick={() => onDelete(post.id)} />
